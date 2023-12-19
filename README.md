@@ -8,6 +8,7 @@ Nuestros instrumentos están diseñados para clientes que valoran la excelencia 
 
 ● Una breve descripción de los integrantes del equipo.
 
+Cruz Carlos Andres, estudiante de ciencia de datos, conocimientos en python y sql
 
 
 
