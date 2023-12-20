@@ -31,3 +31,14 @@ Ofrecemos una amplia gama de marcas reconocidas para satisfacer las preferencias
 7) https://www.gibson.com/en-US/ ; Lider en el rubro , extrajera, buena estetica.
 8) https://www.fender.com/es/start ; Competencia de la anterior, mas sencilla.
 
+## Wireframes
+
+### Home
+
+### Detalle del Producto
+
+### Carrito de Compras
+
+### Formulario de Registro
+
+### Formulario de login
