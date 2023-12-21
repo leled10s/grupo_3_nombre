@@ -1,7 +1,7 @@
 
 # Grupo 3 - Venta de Guitarras 
 
-![logo]
+![logo] ()
 
 ## Descripción de la oferta de productos
 
