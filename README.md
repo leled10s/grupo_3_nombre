@@ -18,7 +18,7 @@ Ofrecemos una amplia gama de marcas reconocidas para satisfacer las preferencias
 * Cruz Carlos Andres, estudiante de ciencia de datos, conocimientos en python y sql.
 * Facundo Peralta. Soy Contador Publico , me gusta la tecnologia, la musica y aprender cosas nuevas.
 * Nieva, Leandro Nahuel. Estudiante de ingeniería informática en la UNJU, disfruto la buena música y busco superarme día a día.
-*Josefina Alancay, estudiante de la Tecnicatura en Analista Programador Universitario en la UNJu.
+* Josefina Alancay, estudiante de la Tecnicatura en Analista Programador Universitario en la UNJu.
 
 ## Referencias
 
