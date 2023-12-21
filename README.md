@@ -1,7 +1,7 @@
 
 # Grupo 3 - Venta de Guitarras
 
-![logo] (https://github.com/leled10s/grupo_3_nombre/main/design/logo.jpeg)
+https://github.com/leled10s/grupo_3_nombre.wiki.git
 
 ## Descripción de la oferta de productos
 
