@@ -1,3 +1,5 @@
+# Tablero de trabajo
+https://trello.com/invite/b/bTaUWrsM/ATTIe885c3b1b01c2874c3fefd9f8726e94eF15F4D12/sprint-2
 
 # Grupo 3 - Venta de Guitarras
 
