@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 # Tablero de trabajo
 https://trello.com/invite/b/bTaUWrsM/ATTIe885c3b1b01c2874c3fefd9f8726e94eF15F4D12/sprint-2
 
+=======
+>>>>>>> f22790355f595d840a6afea8df71a25488cd52d0
 # Grupo 3 - Venta de Guitarras
 
-![logo.jpeg] (https://raw.githubusercontent.com/leled10s/grupo_3_nombre/main/design/logo.jpeg)
+![logo.jpeg](https://raw.githubusercontent.com/leled10s/grupo_3_nombre/main/design/logo.jpeg)
 
 ## Descripción de la oferta de productos
 
