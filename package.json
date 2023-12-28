@@ -1,0 +1,25 @@
+{
+  "name": "grupo_3_nombre",
+  "version": "1.0.0",
+  "description": "https://trello.com/invite/b/bTaUWrsM/ATTIe885c3b1b01c2874c3fefd9f8726e94eF15F4D12/sprint-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leled10s/grupo_3_nombre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leled10s/grupo_3_nombre/issues"
+  },
+  "homepage": "https://github.com/leled10s/grupo_3_nombre#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  }
+}
