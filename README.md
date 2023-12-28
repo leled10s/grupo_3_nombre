@@ -33,11 +33,16 @@ Ofrecemos una amplia gama de marcas reconocidas para satisfacer las preferencias
 ## Wireframes
 
 ### Home
+[home.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786862/home.pdf)
 
 ### Detalle del Producto
+[detalle producto.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786863/detalle.producto.pdf)
 
 ### Carrito de Compras
+[carrito.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786864/carrito.pdf)
 
 ### Formulario de Registro
+[registro.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786866/registro.pdf)
 
 ### Formulario de login
+[login.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786868/login.pdf)
