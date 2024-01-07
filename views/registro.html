@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <link rel="stylesheet" href="https://www.flaticon.es/iconos-gratis/carrito-de-compras">
-            <img src=https://www.flaticon.es/iconos-gratis/carrito-de-compras alt="">
-        </div>
-    </header>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.jpeg" alt="Logo"></a>
+                </div>
+                <div class="login-bar">
+                    <ul>
+                        <li><a href= "register" >Crea tu cuenta <i class="fa-regular fa-address-card"></i></a></li>
+                        <li><a href= "login" >Ingresa <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                        <li><a href= "carrito" >Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <form action="/register" method="POST">
+                <div>
+                    <h1>Registro</h1>
+                </div>
+
+                <div class="form__field">
+                    <label>Foto de perfil:</label>
+                    <p>
+                        <input type="file" name="avatar" accept=".jpg, .png" required>
+                    </p>
+                </div>
+
+                <div class="form__field">
+                    <input type="text" name="nombre" class="control__input" required placeholder="Nombre">
+                </div>
+                
+                <div class="form__field">
+                    <input type="text" name="apellido" class="control__input" required placeholder="Apellido">
+                </div>
+
+                <div class="form__field">
+                    <input type="text" name="usuario" class="control__input" required placeholder="Nombre de usuario">
+                </div>
+            
+                <div class="form__field">
+                    <input type="email" name="email" class="control__input" required placeholder="E-mail">
+                </div>
+
+                <div class="form__field">
+                    <input type="password" name="password" class="control__input" required placeholder="Contraseña">
+                </div>
+
+                <div class="form__field">
+                    <input type="number" name="telefono" class="control__input" required placeholder="Número de teléfono">
+                </div>
+
+                <button type="submit" class="form__btn">Enviar</button>
+            </form>
+        </main>
+        <footer>
+    
+        </footer>
+    </body>
 </html>
