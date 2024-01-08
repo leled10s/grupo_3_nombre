@@ -1,3 +1,11 @@
+/* paleta de colores
+.color1 { #9649d6 };
+.color2 { #b061e0 };
+.color3 { #cb7aeb };
+.color4 { #e592f5 };
+.color5 { #ffaaff };
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -5,24 +13,28 @@
 }
 
 body{
-    background-color: rgb(214, 183, 210);
+    background-color: #e592f5;
 }
 
 .logo{
-    width: 150px;
-    height: 160px;
+    width: 100px;
+    height: 110px;
 }
 .logo img{
+    margin-left: 20px;
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 30px;
 }
 
 .nav-bar{
-    height: 150px;
+    position: relative;
+    height: 110px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #b061e0;
 }
 
 .login-bar{
@@ -48,7 +60,8 @@ a{
 }
 
 form{
-    background-color: rgb(255, 211, 206);
+    position: relative;
+    background-color: #ffaaff;
     margin: 20px auto;
     padding: 30px 35px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -56,7 +69,9 @@ form{
     text-align: center;
     width: 70%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(163, 22, 156);
+    color: #9649d6;
+    justify-content: center;
+    align-items: center;
 }
 
 .form__title{
@@ -133,7 +148,7 @@ input{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     font-size: medium;
-    margin: 30px 40px 40px 40px;
+    margin: 30px 40px 35px;
     cursor: pointer;
 }
 
