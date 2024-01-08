@@ -22,44 +22,48 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <main class="form__container">
             <form action="/register" method="POST">
-                <div>
+                <div class="form__title">
                     <h1>Registro</h1>
                 </div>
 
-                <div class="form__field">
-                    <label>Foto de perfil:</label>
-                    <p>
-                        <input type="file" name="avatar" accept=".jpg, .png" required>
-                    </p>
+                <div class="avatar__container">
+                    <label for="avatar">Foto de perfil:</label>
+                    <div class="avatar">
+                        <img src="images/user-icon.jpg" alt="user_avatar">
+                    </div>
+                    <div id="file">
+                        <p id="btn__file__text">Add file</p>
+                        <input type="file" name="avatar" id="avatar" accept=".jpg, .png">
+                    </div>
                 </div>
 
                 <div class="form__field">
-                    <input type="text" name="nombre" class="control__input" required placeholder="Nombre">
+                    <input type="text" name="nombre" required placeholder="Nombre">
                 </div>
                 
                 <div class="form__field">
-                    <input type="text" name="apellido" class="control__input" required placeholder="Apellido">
+                    <input type="text" name="apellido" required placeholder="Apellido">
                 </div>
 
                 <div class="form__field">
-                    <input type="text" name="usuario" class="control__input" required placeholder="Nombre de usuario">
+                    <input type="text" name="usuario" required placeholder="Nombre de usuario">
                 </div>
             
                 <div class="form__field">
-                    <input type="email" name="email" class="control__input" required placeholder="E-mail">
+                    <input type="email" name="email" required placeholder="E-mail">
                 </div>
 
                 <div class="form__field">
-                    <input type="password" name="password" class="control__input" required placeholder="Contraseña">
+                    <input type="password" name="password" required placeholder="Contraseña">
                 </div>
 
                 <div class="form__field">
-                    <input type="number" name="telefono" class="control__input" required placeholder="Número de teléfono">
+                    <input type="number" name="telefono" required placeholder="Número de teléfono">
                 </div>
 
-                <button type="submit" class="form__btn">Enviar</button>
+                <button type="submit" class="form__btn">Registrarse</button>
             </form>
         </main>
         <footer>
