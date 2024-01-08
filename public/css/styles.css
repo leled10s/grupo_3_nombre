@@ -9,8 +9,8 @@ body{
 }
 
 .logo{
-    width: 100px;
-    height: 150px;
+    width: 150px;
+    height: 160px;
 }
 .logo img{
     position: relative;
@@ -23,6 +23,23 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.login-bar{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 20px;
+    margin: 30px;
+}
+
+.login-bar li{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .form__container{
@@ -39,6 +56,7 @@ form{
     text-align: center;
     width: 70%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(163, 22, 156);
 }
 
 .form__title{
@@ -55,6 +73,7 @@ form label{
     display: block;
     align-self: flex-start;
     margin-left: 20%;
+    font-size: 20px;
 }
 
 .avatar{
@@ -114,8 +133,12 @@ input{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     font-size: medium;
-    margin-bottom: 20px;
+    margin: 30px 40px 40px 40px;
     cursor: pointer;
+}
+
+form h2{
+    border-top: solid 1px blueviolet;
 }
 
 .login__social{
@@ -134,5 +157,5 @@ input{
 
 .login__social img:hover{
     transform: scale(1.2);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
