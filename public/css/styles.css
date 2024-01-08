@@ -54,7 +54,7 @@ form{
 form label{
     display: block;
     align-self: flex-start;
-    margin-left: 40px;
+    margin-left: 20%;
 }
 
 .avatar{
@@ -101,6 +101,7 @@ input{
     border: none;
     border-radius: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 30px;
 }
 
 .form__btn{
@@ -112,4 +113,17 @@ input{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     font-size: medium;
+    margin-bottom: 20px;
+}
+
+.login__social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.login__social img{
+    width: 25%;
+    border-radius: 25%;
 }
