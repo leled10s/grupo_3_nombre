@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# Tablero de trabajo
-https://trello.com/invite/b/bTaUWrsM/ATTIe885c3b1b01c2874c3fefd9f8726e94eF15F4D12/sprint-2
-
-=======
->>>>>>> f22790355f595d840a6afea8df71a25488cd52d0
 # Grupo 3 - Venta de Guitarras
 
 ![logo.jpeg](https://raw.githubusercontent.com/leled10s/grupo_3_nombre/main/design/logo.jpeg)
@@ -39,11 +33,16 @@ Ofrecemos una amplia gama de marcas reconocidas para satisfacer las preferencias
 ## Wireframes
 
 ### Home
+[home.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786862/home.pdf)
 
 ### Detalle del Producto
+[detalle producto.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786863/detalle.producto.pdf)
 
 ### Carrito de Compras
+[carrito.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786864/carrito.pdf)
 
 ### Formulario de Registro
+[registro.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786866/registro.pdf)
 
 ### Formulario de login
+[login.pdf](https://github.com/leled10s/grupo_3_nombre/files/13786868/login.pdf)
