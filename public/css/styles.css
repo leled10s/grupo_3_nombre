@@ -113,6 +113,12 @@ div#file{
     cursor: pointer;
 }
 
+div#file:hover{
+    background-color: #6607b4;
+    color: antiquewhite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 input#avatar{
     position: absolute;
     top: 0px;
@@ -150,6 +156,12 @@ input{
     font-size: medium;
     margin: 30px 40px 35px;
     cursor: pointer;
+}
+
+.form__btn:hover{
+    background-color: #6607b4;
+    color: antiquewhite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 form h2{
