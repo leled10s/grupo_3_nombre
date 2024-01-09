@@ -1,0 +1,51 @@
+:root{
+    --azul:rgb(9,33,55);
+    --dorado:rgb(196,149,65);
+    --azulClaro:rgb(17,58,98);
+}
+
+*{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azul);
+    align-items: center;
+    padding: 15px 20px;
+    padding: 15px 20px;
+}
+
+.logo{
+    width: 50px;
+}
+
+.bar{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    size: 16px;
+    align-items: center;
+    
+}
+
+li {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: solid 0.7px black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cuenta{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: var(--azulClaro);
+    border-radius: 100px;
+}
+
