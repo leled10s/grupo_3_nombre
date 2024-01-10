@@ -135,9 +135,27 @@ form h2{
     border-radius: 25%;
     cursor: pointer;
     transition: all 450ms;
+    border: solid 1px var(--azulClaro);
 }
 
 .login__social img:hover{
     transform: scale(1.2);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h2{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #44749d;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #ffffff;
 }
