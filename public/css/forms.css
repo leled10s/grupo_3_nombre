@@ -46,14 +46,9 @@ form label{
     font-size: 20px;
 }
 
-.avatar{
-    border-radius: 50%;
-}
-
 .avatar img{
     width: 60%;
     max-width: 250px;
-    background-color: #002255;
     border-radius: 50%;
 }
 
