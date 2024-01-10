@@ -4,12 +4,6 @@
     --azulClaro:rgb(17,58,98);
 }
 
-*{
-    margin: 0;
-}
-
-
-
 .carrusel{
     display: flex;
     height: 150px;
@@ -23,6 +17,7 @@
 .carrusel button{
     height: 20px;
     align-self: center;
+    margin: 10px;
 }
 
 .search_bar{

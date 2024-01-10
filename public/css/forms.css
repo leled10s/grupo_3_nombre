@@ -1,67 +1,22 @@
-/* paleta de colores
-.color1 { #9649d6 };
-.color2 { #b061e0 };
-.color3 { #cb7aeb };
-.color4 { #e592f5 };
-.color5 { #ffaaff };
-*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #e592f5;
-}
-
-.logo{
-    width: 100px;
-    height: 110px;
-}
-.logo img{
-    margin-left: 20px;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-}
-
-.nav-bar{
-    position: relative;
-    height: 110px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #b061e0;
-}
-
-.login-bar{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    list-style: none;
-    padding: 20px;
-    margin: 30px;
-}
-
-.login-bar li{
-    margin: 10px;
-}
-
-a{
-    text-decoration: none;
+:root{
+    --azul:rgb(9,33,55);
+    --dorado:rgb(196,149,65);
+    --azulClaro:rgb(17,58,98);
+    --color1: #44749d;
+    --color2: #c6d4e1;
+    --color3: #ffffff;
+    --color4: #ebe7e0;
+    --color5: #bdb8ad;
 }
 
 .form__container{
+    width: 100%;
     display: flex;
 
 }
 
 form{
-    position: relative;
-    background-color: #ffaaff;
+    background-color: var(--color2);
     margin: 20px auto;
     padding: 30px 35px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -69,7 +24,7 @@ form{
     text-align: center;
     width: 70%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #9649d6;
+    color: var(--azul);
     justify-content: center;
     align-items: center;
 }
@@ -107,14 +62,14 @@ div#file{
     margin: 10px auto;
     padding: 10px;
     width: 100px;
-    background-color: blueviolet;
+    background-color: var(--azulClaro);
     border-radius: 20px;
     color: #fff;
     cursor: pointer;
 }
 
 div#file:hover{
-    background-color: #6607b4;
+    background-color: var(--color1);
     color: antiquewhite;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -150,7 +105,7 @@ input{
     height: 35px;
     border: none;
     border-radius: 25px;
-    background-color: blueviolet;
+    background-color: var(--azulClaro);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     font-size: medium;
@@ -159,13 +114,13 @@ input{
 }
 
 .form__btn:hover{
-    background-color: #6607b4;
+    background-color: var(--color1);
     color: antiquewhite;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 form h2{
-    border-top: solid 1px blueviolet;
+    border-top: solid 1px var(--azulClaro);
 }
 
 .login__social{
