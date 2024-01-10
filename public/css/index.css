@@ -8,44 +8,58 @@
     margin: 0;
 }
 
-nav{
+
+
+.carrusel{
+    display: flex;
+    height: 150px;
+    width: 95%;
+    border: solid black 1px;
+    margin: 20px 0;
+
+    justify-content: space-between;
+}
+
+.carrusel button{
+    height: 20px;
+    align-self: center;
+}
+
+.search_bar{
+    background-color: var(--azul);
+    color:white;
+    width: 95%;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.search_input{
+    background-color: var(--azulClaro);
+}
+
+.categories{
     display: flex;
     justify-content: space-between;
-    background-color: var(--azul);
-    align-items: center;
-    padding: 15px 20px;
-    padding: 15px 20px;
+    width: 97%;
+    margin: 15px 0;
 }
 
-.logo{
-    width: 50px;
-}
-
-.bar{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    size: 16px;
-    align-items: center;
-    
-}
-
-li {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    border: solid 0.7px black;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
+.categories button{
+    width: 24%;  
+    background-color: var(--azul);  
     color: white;
+    border-radius: 3px;
 }
 
-.cuenta{
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    color: var(--azulClaro);
-    border-radius: 100px;
+.products{
+    border: solid black 1px;
+    width: 97%;
+    height: 600px;
 }
 
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

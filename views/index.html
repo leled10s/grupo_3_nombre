@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
-
+    <link rel="stylesheet" href="/css/padre.css">
     <link rel="stylesheet" href="/css/index.css">
     <title>Home</title>
 </head>
@@ -18,18 +18,35 @@ rel="stylesheet" />
         <img class="logo" src="/images/logo.jpeg" alt="logo">
         <ul class="bar">
             <li><i class="fas fa-mobile-alt"></i></li>
-            <li><i class="fas fa-shopping-cart"></i></li>
-            <li><i class="fas fa-home"></i></li>
+            <li><a href="localhost:3500/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="localhost:3500/index.html"><i class="fas fa-home"></i></a></li>
             <li class="cuenta"><i class="fas fa-user"></i></li>
         </ul>
     </nav>
 
     <main>
+        <div class="carrusel">
+            <button class="prev-btn"></button>
+            <button class="next-btn"></button>
+        </div>
+        <div class="search_bar">
+            <label for="search_input"> Buscar </label>
+            <input class="search_input" id="search_input" type="text" placeholder="...">
+        </div>
+        <div class="categories">
+            <button>guitarras</button>
+            <button>amplif.</button>
+            <button>pedales</button>
+            <button>accesorios</button>
+        </div>
+        <div class="products">
+
+        </div>
 
     </main>
 
     <footer>
-        
+       <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quos natus tenetur illo consectetur fuga aspernatur eligendi laboriosam corporis, molestiae et unde ut mollitia ex eos veritatis beatae, maiores eveniet?</article> 
     </footer>
 </body>
 </html>
