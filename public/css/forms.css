@@ -147,15 +147,16 @@ h2{
     padding: 20px;
 }
 
-a{
+form a{
     text-decoration: none;
     color: #44749d;
+    font-size: 20px;
 }
 
-a:hover{
+form a:hover{
     text-decoration: underline;
 }
 
-a:visited{
+form a:visited{
     color: #ffffff;
 }
