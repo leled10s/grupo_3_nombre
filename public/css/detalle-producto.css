@@ -1,0 +1,43 @@
+:root{
+    --azul:rgb(9,33,55);
+    --dorado:rgb(196,149,65);
+    --azulClaro:rgb(17,58,98);
+}
+
+.prod-head{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.element{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.producto{
+    display: flex;
+}
+
+.image{
+    width: 150px;
+}
+
+.nombre-prod{
+    background-color: var(--azul);
+    color: white;
+}
+
+.medios-pago{
+    color: var(--azulClaro);
+}
+
+.precio{
+    color: var(--dorado);
+}
+
+.description{
+    margin-top: 15px;
+    padding: 10px;
+}

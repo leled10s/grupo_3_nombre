@@ -4,13 +4,10 @@
     --azulClaro:rgb(17,58,98);
 }
 
-<<<<<<< HEAD
 *{
     margin: 0;
 }
 
-=======
->>>>>>> 008cb43af88e203ba40223a8187e39de687b4173
 .carrusel{
     display: flex;
     height: 150px;
@@ -24,13 +21,10 @@
 .carrusel button{
     height: 20px;
     align-self: center;
-<<<<<<< HEAD
     border: none;
     background-color: var(--azulClaro);
     color: white;
-=======
     margin: 10px;
->>>>>>> 008cb43af88e203ba40223a8187e39de687b4173
 }
 
 .search_bar{
@@ -70,9 +64,6 @@ main{
     align-items: center;
 }
 
-.user-menu{
-    display: none;
-}
 
 .products{
     width: 97%;

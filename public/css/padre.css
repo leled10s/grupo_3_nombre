@@ -87,6 +87,13 @@ footer ul{
     margin: 20px;
 }
 
+.fa-user{
+    color: var(--azul);
+}
+
+.user-menu{
+    display: none;
+}
 
 
 
