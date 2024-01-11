@@ -1,0 +1,93 @@
+:root {
+    --azul: rgb(9, 33, 55);
+    --dorado: rgb(196, 149, 65);
+    --azulClaro: rgb(17, 58, 98);
+    --color1: #44749d;
+    --color2: #c6d4e1;
+    --color3: #ffffff;
+    --color4: #ebe7e0;
+    --color5: #bdb8ad;
+}
+
+
+#carrito {
+    background-color: var(--color2);
+    margin: 20px auto;
+    padding: 30px 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--azul);
+    justify-content: center;
+    align-items: center;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.producto img {
+    max-width: 200px;
+    margin-right: 50px;
+}
+
+.cantidad-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--color3);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.cantidad {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.agregar-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--azul);
+}
+
+.agregar-icon {
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+
+#total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#pagar {
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--azulClaro);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: medium;
+    margin: 30px 40px 35px;
+    cursor: pointer;
+}
+
+#pagar:hover {
+    background-color: var(--color1);
+    color: antiquewhite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

@@ -4,29 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registrarse</title>
-        <link rel="icon" href="images/icono-guitarra.png">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="icon" href="images\icono-guitarra.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet" />
+        <link rel="stylesheet" href="css/padre.css">
+        <link rel="stylesheet" href="css/forms.css">
     </head>
     <body>
-        <header>
-            <nav class="nav-bar">
-                <div class="logo">
-                    <a href="/"><img src="images/logo.jpeg" alt="Logo"></a>
-                </div>
-                <div>
-                    <ul class="login-bar">
-                        <li><a href= "carrito" >Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
-                        <li><a href= "register" >Registrarse <i class="fa-regular fa-address-card"></i></a></li>
-                        <li><a href= "login" >Ingresa <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <nav>
+            <a href="/"><img class="logo" src="images/logo.jpeg" alt="logo"></a>
+            <ul class="bar">
+                <li><i class="fas fa-mobile-alt"></i></li>
+                <li><a href="carrito"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="/"><i class="fas fa-home"></i></a></li>
+                <li class="cuenta"><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
         <main class="form__container">
             <form action="/register" method="POST">
                 <div class="form__title">
-                    <h1>Registro</h1>
+                    <h1>Creá tu cuenta</h1>
                 </div>
 
                 <div class="avatar__container">
@@ -65,10 +65,19 @@
                 </div>
 
                 <button type="submit" class="form__btn">Registrarse</button>
+
+                <h2>¿Ya tenes cuenta?</h2> <a href="login">Iniciar sesión</a>
             </form>
         </main>
         <footer>
-    
+            <ul>
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-square-x-twitter"></i></li>
+                <li><i class="fa-brands fa-square-youtube"></i></li>
+                <li><i class="fa-brands fa-square-facebook"></i></li>
+                <li><i class="fa-brands fa-square-whatsapp"></i></li>
+            </ul>
+            <p class="footer__bottom-legal-text">Copyright 2024 Electric Brands, Inc. All rights reserved.</p>
         </footer>
     </body>
 </html>
