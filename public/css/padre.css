@@ -38,11 +38,48 @@ nav{
     gap: 20px;
     size: 16px;
     align-items: center;
-    
+    justify-content: space-around;
 }
+
+.fa-user{
+    color: var(--azul);
+}
+
+.user-menu{
+    display: none;
+    width: 100px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 60px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cuenta:hover .user-menu{
+    display: block;
+}
+
+.user-menu li{
+    border: none;
+    width: 100%;
+}
+
+.user-menu li:hover{
+    background-color: rgb(9,33,55);
+}
+
+.user-menu li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
 a{
     color:white;
 }
+
 li {
     display: flex;
     width: 30px;
@@ -87,13 +124,9 @@ footer ul{
     margin: 20px;
 }
 
-.fa-user{
-    color: var(--azul);
-}
 
-.user-menu{
-    display: none;
-}
+
+
 
 
 

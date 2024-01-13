@@ -50,6 +50,7 @@ form label{
     width: 60%;
     max-width: 250px;
     border-radius: 50%;
+    border: solid 5px var(--azulClaro);
 }
 
 div#file{
@@ -130,7 +131,7 @@ form h2{
     border-radius: 25%;
     cursor: pointer;
     transition: all 450ms;
-    border: solid 1px var(--azulClaro);
+    border: solid 5px var(--azulClaro);
 }
 
 .login__social img:hover{
