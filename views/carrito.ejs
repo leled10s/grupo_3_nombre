@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/padre.css">
+    <title>Carrito de Compras</title>
+    <link rel="icon" href="images/icono-guitarra.png">
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+
+    <main>
+        <div id="carrito">
+            <h2>CARRITO</h2>
+
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="images/icono-guitarra.png" alt="Producto 1">
+                <div>
+                    <h3>Nombre del Producto 1</h3>
+                    <div class="cantidad-container">
+                        <div class="cantidad">2</div>
+                        <div class="agregar-container" onclick="agregarProducto(1)">
+                            <span>Agregar</span>
+                            <i class="fas fa-plus agregar-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="images/icono-guitarra.png" alt="Producto 2">
+                <div>
+                    <h3>Nombre del Producto 2</h3>
+                    <div class="cantidad-container">
+                        <div class="cantidad">1</div>
+                        <div class="agregar-container" onclick="agregarProducto(2)">
+                            <span>Agregar</span>
+                            <i class="fas fa-plus agregar-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="images/icono-guitarra.png" alt="Producto 3">
+                <div>
+                    <h3>Nombre del Producto 3</h3>
+                    <div class="cantidad-container">
+                        <div class="cantidad">1</div>
+                        <div class="agregar-container" onclick="agregarProducto(3)">
+                            <span>Agregar</span>
+                            <i class="fas fa-plus agregar-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p id="total">Total: $<span id="totalAmount">0.00</span></p>
+            <button id="pagar" onclick="realizarPago()">Pagar</button>
+        </div>
+
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

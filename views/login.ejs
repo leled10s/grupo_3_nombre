@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ingresar</title>
+        <link rel="icon" href="images\icono-guitarra.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet" />
+        <link rel="stylesheet" href="css/padre.css">
+        <link rel="stylesheet" href="css/forms.css">
+    </head>
+    <body>
+        <%- include('./partials/header') %>
+        <main class="form__container">
+            <form action="/register" method="POST">
+                <div class="form__title">
+                    <h1>Iniciar sesión</h1>
+                </div>
+                <div class="avatar__container">
+                    <div class="avatar">
+                        <img src="images/user-icon.jpg" alt="user_avatar">
+                    </div>
+                </div>
+                <div class="form__field">
+                    <input type="text" name="usuario" required placeholder="    Nombre de usuario">
+                </div>
+                <div class="form__field">
+                    <input type="password" name="password" required placeholder="    Contraseña">
+                </div>
+                <button type="submit" class="form__btn">Ingresar</button>
+                <h2>Ingresar con:</h2>
+                <div class="login__social">
+                    <img src="images/logo-facebook.jpg" alt="logo-facebook">
+                    <img src="images/logo-google.png" alt="logo-google">
+                    <img src="images/logo-instagram.png" alt="logo-instagram">
+                </div>
+            </form>
+        </main>
+        <%- include('./partials/footer') %>
+</body>
+</html>

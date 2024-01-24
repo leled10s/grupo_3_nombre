@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse</title>
+        <link rel="icon" href="images\icono-guitarra.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet" />
+        <link rel="stylesheet" href="css/padre.css">
+        <link rel="stylesheet" href="css/forms.css">
+    </head>
+    <body>
+        <%- include('./partials/header') %>
+        <main class="form__container">
+            <form action="/register" method="POST">
+                <div class="form__title">
+                    <h1>Creá tu cuenta</h1>
+                </div>
+
+                <div class="avatar__container">
+                    <label for="avatar">Foto de perfil:</label>
+                    <div class="avatar">
+                        <img src="images/user-icon.jpg" alt="user_avatar">
+                    </div>
+                    <div id="file">
+                        <p id="btn__file__text">Add file</p>
+                        <input type="file" name="avatar" id="avatar" accept=".jpg, .png">
+                    </div>
+                </div>
+
+                <div class="form__field">
+                    <input type="text" name="nombre" required placeholder="    Nombre">
+                </div>
+                
+                <div class="form__field">
+                    <input type="text" name="apellido" required placeholder="    Apellido">
+                </div>
+
+                <div class="form__field">
+                    <input type="text" name="usuario" required placeholder="    Nombre de usuario">
+                </div>
+            
+                <div class="form__field">
+                    <input type="email" name="email" required placeholder="    E-mail">
+                </div>
+
+                <div class="form__field">
+                    <input type="password" name="password" required placeholder="    Contraseña">
+                </div>
+
+                <div class="form__field">
+                    <input type="number" name="telefono" required placeholder="    Número de teléfono">
+                </div>
+
+                <button type="submit" class="form__btn">Registrarse</button>
+
+                <h2>¿Ya tenes cuenta?</h2> <a href="login">Iniciar sesión</a>
+            </form>
+        </main>
+
+        <%- include('./partials/footer') %>
+
+    </body>
+</html>

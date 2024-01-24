@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet" />
+        <link rel="stylesheet" href="/css/padre.css">
+        <link rel="stylesheet" href="/css/detalle-producto.css">
+        <title>Home</title>
+        <link rel="icon" href="images\icono-guitarra.png">
+    </head>
+    <body>
+        <%- include('./partials/header') %>
+    
+        <main>
+            <section class="element">
+                <div class="producto">
+                    <img class="image" src="/images/lespaul.jpg" alt="">
+                    <div class="prod-head">
+                        <div class="nombre-prod">Nombre de producto</div>
+                        <div class="medios-pago">Medios de pago</div>
+                        <div class="precio">$ XXXXXXXXXXX</div>
+                        <div>
+                            <input type="text">
+                        </div>
+                        
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus veritatis molestias exercitationem. Ex quisquam tenetur a non, aliquam impedit nesciunt voluptatum enim soluta cumque eveniet dolorum odit alias corporis.</p>
+                </div>
+            </section>
+            <section>
+
+            </section>
+        </main>
+    
+        <%- include('./partials/footer') %>
+    </body>
+</html>
