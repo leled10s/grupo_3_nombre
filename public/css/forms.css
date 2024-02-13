@@ -87,7 +87,7 @@ input#avatar{
     padding: 10px;
 }
 
-input{
+.form input{
     height: 35px;
     width: 80%;
     border: none;

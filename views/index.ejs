@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-rel="stylesheet" />
-    <link rel="stylesheet" href="/css/padre.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <title>Home</title>
-    <link rel="icon" href="images\icono-guitarra.png">
-</head>
+    <%- include('./partials/head', { title: 'Home' }) %>
 <body>
     <%- include('./partials/header') %>
 
     <main>
         <div class="carrusel">
             <button class="prev-btn"> << </button>
-            <img src="/images/ban.jpg" alt="">
+            <img src="/images/ban.jpg" alt="banner">
             <button class="next-btn"> >> </button>
         </div>
         <div class="search_bar">
@@ -34,54 +21,54 @@ rel="stylesheet" />
             <button>accesorios</button>
         </div>
         <div class="products">
-            <div class="producto">
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
-            <div class="producto">
+            </article>
+            <article class="producto">
                 <img src="/images/lespaul.jpg" alt="">
 
-            </div>
+            </article>
         </div>
 
     </main>
