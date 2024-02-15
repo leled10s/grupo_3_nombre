@@ -80,3 +80,7 @@ article .producto{
     height: 120px;
     border: solid black 1px;
 }
+
+article .producto img{
+    margin-right: 0;
+}
