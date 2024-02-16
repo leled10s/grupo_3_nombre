@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head', { title: 'Crear Producto' }) %>
+    <head>
+        <link rel="stylesheet" href="/css/create-form.css">
+    </head>
+<body>
+    <%- include('./partials/header') %>
+
+    <main>
+        <form action="/products/create" method="POST">
+            <label for="name">Modelo: </label>
+            <input placeholder="" class="" name="name" type="text"><br/>
+            <label for="brand">Marca: </label>
+            <input placeholder="" class="" name="brand" type="text"><br/>
+            <label for="year">Año: </label>
+            <input placeholder="" class="" name="year" type="number"><br/>
+            <label for="body_type">Tipo de cuerpo: </label>
+            <input placeholder="" class="" name="body_type" type="text"><br/>
+            <label for="neck_type">Tipo de mastil: </label>
+            <input placeholder="" class="" name="neck_type" type="text"><br/>
+            <label for="pickup_configuration">pastillas: </label>
+            <input placeholder="" class="" name="pickup_configuration" type="text"><br/>
+            <label for="scale_length">Tamaño</label>
+            <input placeholder="" class="" name="scale_length" type="text"><br/>
+            <label for="fretboard_material">material del diapasón: </label>
+            <input placeholder="" class="" name="fretboard_material" type="text"><br/>
+            <label for="number_of_frets">Numero de trastes: </label>
+            <input placeholder="" class="" name="number_of_frets" type="text"><br/>
+            <label for="price">Precio:</label>
+            <input placeholder="" class="" name="price" type="number"><br/>
+            <label for="discount">Descuento: </label>
+            <input placeholder="" class="" name="discount" type="number"><br/>
+            <label for="color">Color: </label>
+            <input placeholder="" class="" name="color" type="text"><br/>
+            <label for="img">foto: </label>
+            <input placeholder="" class="" name="img" type="file"><br/>
+
+            <input type="button" value="ENVIAR">
+        </form>
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+</html>

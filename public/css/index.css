@@ -70,17 +70,23 @@ main{
 .products{
     width: 97%;
     display: flex;
+
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
-article .producto{
+.producto{
     width: 23%;
-    height: 120px;
+
     border: solid black 1px;
+    display: flex;
+    flex-direction: column;
 }
 
-article .producto img{
-    margin-right: 0;
+
+h3{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
