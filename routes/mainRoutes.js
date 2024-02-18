@@ -1,13 +1,14 @@
-const controller = require("../controller/mainController")
+const mainController = require("../controller/mainController")
 const express = require("express")
-const router = express.Router()
+const mainRouter = express.Router()
 
-router.get("/", controller.index)
-router.get("/detalle-producto/:id", controller.detalleProducto)
-router.get("/carrito", controller.carrito)
-router.get("/login", controller.login)
-router.get("/register", controller.register)
-router.get("/products",controller.products)
-router.get("/products/create",controller.create)
+mainRouter.get("/", mainController.index)
 
-module.exports = router 
+
+mainRouter.get("/carrito", mainController.carrito)
+mainRouter.get("/login", mainController.login)
+mainRouter.get("/register", mainController.register)
+
+
+
+module.exports = mainRouter 

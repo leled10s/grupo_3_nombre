@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head', { title: 'Producto' }) %>
+    <%- include('./partials/head', { title: 'Productos' }) %>
     <body>
         <%- include('./partials/header') %>
     
         <main>
-            <%= producto.name %> 
-
-
             <section class="element">
                 <div class="producto">
                     <img class="image" src="/images/lespaul.jpg" alt="">
                     <div class="prod-head">
-                        <div class="nombre-prod">Nombre de producto</div>
+                        <div class="nombre-prod"><%= producto.name %></div>
+                        <div class="nombre-prod"><%= producto.brand %></div>
+                        <div class="nombre-prod"><%= producto.year %></div>
                         <div class="medios-pago">Medios de pago</div>
-                        <div class="precio">$ XXXXXXXXXXX</div>
+                        <div class="precio">$ <%= producto.price %></div>
+                        <div class="precio">$ <%= producto.discount %></div>
                         <div>
                             <input type="text">
                         </div>
@@ -23,7 +23,15 @@
                     </div>
                 </div>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus veritatis molestias exercitationem. Ex quisquam tenetur a non, aliquam impedit nesciunt voluptatum enim soluta cumque eveniet dolorum odit alias corporis.</p>
+                    <p>
+                        <%= producto.body_type %>
+                        <%= producto.neck_type %>
+                        <%= producto.pickup_configuration %>
+                        <%= producto.scale_length %>
+                        <%= producto.fretboard_material %>
+                        <%= producto.number_of_frets %>
+                        <%= producto.color %>
+                    </p>
                 </div>
             </section>
             <section>

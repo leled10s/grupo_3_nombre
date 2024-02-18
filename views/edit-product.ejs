@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head', { title: 'Crear Producto' }) %>
+    <head>
+        <link rel="stylesheet" href="/css/create-form.css">
+    </head>
+<body>
+    <%- include('./partials/header') %>
+
+    <main>
+        <form action="/products/create?_method=PUT" method="POST">
+            <label for="name">Modelo: </label>
+            <input placeholder="" value=<%- producto.name %> name="name" type="text"><br/>
+            <label for="brand">Marca: </label>
+            <input placeholder="" value=<%- producto.brand %> name="brand" type="text"><br/>
+            <label for="year">Año: </label>
+            <input placeholder="" value=<%- producto.year %> name="year" type="number"><br/>
+            <label for="body_type">Tipo de cuerpo: </label>
+            <input placeholder="" value=<%- producto.body_type %> name="body_type" type="text"><br/>
+            <label for="neck_type">Tipo de mastil: </label>
+            <input placeholder="" value=<%- producto.neck_type %> name="neck_type" type="text"><br/>
+            <label for="pickup_configuration">pastillas: </label>
+            <input placeholder="" value=<%- producto.pickup_configuration %> name="pickup_configuration" type="text"><br/>
+            <label for="scale_length">Tamaño</label>
+            <input placeholder="" value=<%- producto.scale_length %> name="scale_length" type="text"><br/>
+            <label for="fretboard_material">material del diapasón: </label>
+            <input placeholder="" value=<%- producto.fretboard_material %> name="fretboard_material" type="text"><br/>
+            <label for="number_of_frets">Numero de trastes: </label>
+            <input placeholder="" value=<%- producto.number_of_frets %> name="number_of_frets" type="text"><br/>
+            <label for="price">Precio:</label>
+            <input placeholder="" value=<%- producto.price %> name="price" type="number"><br/>
+            <label for="discount">Descuento: </label>
+            <input placeholder="" value=<%- producto.discount %> name="discount" type="number"><br/>
+            <label for="color">Color: </label>
+            <input placeholder="" value=<%- producto.color %> name="color" type="text"><br/>
+            <label for="img">foto: </label>
+            <input placeholder=""  name="img" type="file"><br/>
+
+            <input type="submit" value="ENVIAR">
+        </form>
+    </main>
+    <form method="POST" action=<%- "/products/"+producto.id+"?_method=DELETE" %> >
+        <input type="submit" value="BORRAR">
+    </form>
+    <%- include('./partials/footer') %>
+</body>
+</html>

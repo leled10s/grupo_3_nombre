@@ -4,14 +4,9 @@ const data = fs.readFileSync(path.join(__dirname,'../data/MOCK_DATA.json'), "utf
 const catalogo = JSON.parse(data)
 
 
-const controller = {
+const mainController = {
     index:(req, res)=>{
         res.render("index",{catalogo:catalogo})
-
-    },
-    detalleProducto:(req, res)=>{
-        const producto = catalogo.find((p)=>p.id == req.params.id)
-        res.render("detalle-producto",{producto:producto})
     },
     carrito:(req, res)=>{
         res.render("carrito")
@@ -21,13 +16,7 @@ const controller = {
     },
     login:(req, res)=>{
         res.render("login")
-    },
-    products:(req, res)=>{
-        res.render("products", {catalogo:catalogo})
-    },
-    create:(req, res)=>{
-        res.render("create")
     }
 }
 
-module.exports = controller
+module.exports = mainController
