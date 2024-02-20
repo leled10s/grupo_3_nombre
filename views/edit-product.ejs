@@ -2,6 +2,7 @@
 <html lang="en">
     <%- include('./partials/head', { title: 'Crear Producto' }) %>
     <head>
+        <link rel="stylesheet" href="css/forms.css">
         <link rel="stylesheet" href="/css/create-form.css">
     </head>
 <body>
@@ -9,6 +10,8 @@
 
     <main>
         <form action="/products/create?_method=PUT" method="POST">
+            <label for="id">ID: </label>
+            <input placeholder="" value=<%- producto.id %> name="id" type="number"><br/>
             <label for="name">Modelo: </label>
             <input placeholder="" value=<%- producto.name %> name="name" type="text"><br/>
             <label for="brand">Marca: </label>

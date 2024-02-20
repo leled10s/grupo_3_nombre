@@ -31,7 +31,7 @@ const productControllers = {
         redirect("/edit")
     },
     delete:(req, res)=>{
-        
+        console.log("SE VA A BORRAR EL ID "+req.params.id);
     }
 }
 

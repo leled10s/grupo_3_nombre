@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('./partials/head', { title: 'productos' }) %>
+    <head>
+        <link rel="stylesheet" href="css/products.css">
+    </head>
 <body>
     <%- include('./partials/header') %>
 
@@ -16,17 +19,34 @@
             <button>accesorios</button>
         </div>
         <div class="products">
-            <% catalogo.forEach(product => { %>
-                <article class="producto">
-                    <img src="/images/lespaul.jpg" alt="">
-                    <div class="detalle" >
-                        <h3 class="nombre-producto"><%= product.name %></h3>
-                        <h3 class="marca"><%= product.brand %></h3>
-                        <h3 class="precio"><%= product.price %></h3>
-                        <h3 class="descuento"><%= product.discount %></h3>
-                    </div>
-                </article>
-            <% }) %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>img</th>
+                        <th>modelo - marca</th>
+                        <th>categoria</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% catalogo.forEach(product => { %>
+                        <tr>
+                            <td><%- product.id %></td>
+                            <td>img</td>
+                            <td><%- product.brand+" - "+product.name %></td>
+                            <td>categoria</td>
+                            <td class="btn-col">
+                                <button class="edit-btn"><a href=<%- "/products/"+product.id+"/edit" %>>EDITAR</a></button>
+
+                                <form  method="post" action=<%- "/products/"+product.id+"?_method=DELETE" %> > 
+                                    <input class="delete-btn" type="submit" value="BORRAR">
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
         </div>
 
     </main>
