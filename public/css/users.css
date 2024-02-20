@@ -1,0 +1,11 @@
+.users .detalle{
+    background-color: beige;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    
+}
+.listadoUsers{
+    display: flex;
+    align-items: center;
+}

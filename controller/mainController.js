@@ -4,6 +4,7 @@ const data = fs.readFileSync(path.join(__dirname,'../data/MOCK_DATA.json'), "utf
 const catalogo = JSON.parse(data)
 
 
+
 const mainController = {
     index:(req, res)=>{
         res.render("index",{catalogo:catalogo})

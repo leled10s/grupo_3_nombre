@@ -3,26 +3,46 @@ const path = require("path")
 const data = fs.readFileSync(path.join(__dirname,'../data/USER-DATA.json'), "utf-8")
 const users = JSON.parse(data)
 
+
+
 const userControllers = {
-    index:(req, res)=>{
-        res.render("index",{catalogo:catalogo})
-    },
-    crearUsuario:(req, res)=>{
-        //metodo POST, envia la informacion del formulario crearUsuario
-        res.redirect('')
+    users:(req, res)=>{
+            //GET, devuelve la vista con todos lo usuarios
+            res.render("users.ejs", {users:users})
+        },
+        crearUsuario:(req, res)=>{
+            //metodo POST, envia la informacion del formulario crearUsuario
+            
+            const newUser = {
+                id: Date.now(),
+                nombre: req.body.nombre,
+                apellido: req.body.apellido,
+                usuario: req.body.usuario,
+                email: req.body.email,
+                password: req.body.password,
+                telefono: req.body.telefono,
+                image: req.file?.filename    || 'user-icon.png',
+			
+		}
+        console.log(req.body);
+		// Agregamos el nuevo producto al listado
+		users.push(newUser)
+		// Convertimos a json el objeto javascript
+		let productsJSON = JSON.stringify(users, null, ' ')
+		// Escribimos el json
+		fs.writeFileSync(path.join(__dirname,'../data/USER-DATA.json'), productsJSON)
+
+        
+        res.redirect('/users')
     },
     formCrearUsuario:(req, res)=>{
         //medoto GET, devuelve el formulario para crear usiario
-        res.render("")
-    },
-    users:(req, res)=>{
-        //GET, devuelve la vista con todos lo usuarios
-        res.render("", {users:users})
+        res.render("registro.ejs")
     },
     formEditUser:(req, res)=>{
         //GET, devuelve el form para editar un user
         const user = users.find((u)=>u.id == req.params.id)
-        producto?res.render("",{user:user}):res.send("el id no es valido")
+        user?res.render("",{user:user}):res.send("el id no es valido")
     },
     EditUser:(req, res)=>{
         //metodo PUT, envia la informacion del formulario editUser

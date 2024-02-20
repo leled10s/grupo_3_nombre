@@ -9,42 +9,40 @@
     <%- include('./partials/header') %>
 
     <main>
-        <form action="/products/create?_method=PUT" method="POST">
+        <form action="/:id?_method=PUT" method="POST">
             <label for="id">ID: </label>
-            <input placeholder="" value=<%- producto.id %> name="id" type="number"><br/>
+            <input placeholder="" name="id" type="number" value=<%- producto.id %>> <br/>
             <label for="name">Modelo: </label>
-            <input placeholder="" value=<%- producto.name %> name="name" type="text"><br/>
+            <input placeholder="" name="name" type="text" value=<%- producto.name %> ><br/>
             <label for="brand">Marca: </label>
-            <input placeholder="" value=<%- producto.brand %> name="brand" type="text"><br/>
+            <input placeholder="" name="brand" type="text" value=<%- producto.brand %> ><br/>
             <label for="year">Año: </label>
-            <input placeholder="" value=<%- producto.year %> name="year" type="number"><br/>
+            <input placeholder="" name="year" type="number" value=<%- producto.year %> ><br/>
             <label for="body_type">Tipo de cuerpo: </label>
-            <input placeholder="" value=<%- producto.body_type %> name="body_type" type="text"><br/>
+            <input placeholder="" name="body_type" type="text" value=<%- producto.body_type %> ><br/>
             <label for="neck_type">Tipo de mastil: </label>
-            <input placeholder="" value=<%- producto.neck_type %> name="neck_type" type="text"><br/>
+            <input placeholder="" name="neck_type" type="text" value=<%- producto.neck_type %> ><br/>
             <label for="pickup_configuration">pastillas: </label>
-            <input placeholder="" value=<%- producto.pickup_configuration %> name="pickup_configuration" type="text"><br/>
+            <input placeholder="" name="pickup_configuration" type="text" value=<%- producto.pickup_configuration %> ><br/>
             <label for="scale_length">Tamaño</label>
-            <input placeholder="" value=<%- producto.scale_length %> name="scale_length" type="text"><br/>
+            <input placeholder="" name="scale_length" type="text" value=<%- producto.scale_length %> ><br/>
             <label for="fretboard_material">material del diapasón: </label>
-            <input placeholder="" value=<%- producto.fretboard_material %> name="fretboard_material" type="text"><br/>
+            <input placeholder="" name="fretboard_material" type="text" value=<%- producto.fretboard_material %> ><br/>
             <label for="number_of_frets">Numero de trastes: </label>
-            <input placeholder="" value=<%- producto.number_of_frets %> name="number_of_frets" type="text"><br/>
+            <input placeholder="" name="number_of_frets" type="text" value=<%- producto.number_of_frets %> ><br/>
             <label for="price">Precio:</label>
-            <input placeholder="" value=<%- producto.price %> name="price" type="number"><br/>
+            <input placeholder="" name="price" type="number" value=<%- producto.price %> ><br/>
             <label for="discount">Descuento: </label>
-            <input placeholder="" value=<%- producto.discount %> name="discount" type="number"><br/>
+            <input placeholder="" name="discount" type="number" value=<%- producto.discount %> ><br/>
             <label for="color">Color: </label>
-            <input placeholder="" value=<%- producto.color %> name="color" type="text"><br/>
+            <input placeholder="" name="color" type="text" value=<%- producto.color %> ><br/>
             <label for="img">foto: </label>
             <input placeholder=""  name="img" type="file"><br/>
 
             <input type="submit" value="ENVIAR">
         </form>
     </main>
-    <form method="POST" action=<%- "/products/"+producto.id+"?_method=DELETE" %> >
-        <input type="submit" value="BORRAR">
-    </form>
+
     <%- include('./partials/footer') %>
 </body>
 </html>

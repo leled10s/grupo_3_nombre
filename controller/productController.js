@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require("path")
 const data = fs.readFileSync(path.join(__dirname,'../data/MOCK_DATA.json'), "utf-8")
-const catalogo = JSON.parse(data)
+let catalogo = JSON.parse(data)
 
 const productControllers = {
     index:(req, res)=>{
@@ -27,11 +27,16 @@ const productControllers = {
         res.render("edit-product",{producto:producto})
     },
     editPut:(req, res)=>{
+        catalogo[catalogo.findIndex(e=>e.id==req.body.id)] = req.body
 
-        redirect("/edit")
+        res.redirect("/products")
     },
     delete:(req, res)=>{
-        console.log("SE VA A BORRAR EL ID "+req.params.id);
+        console.log(catalogo.length);
+        catalogo = catalogo.filter((p)=>p.id != req.params.id)
+        console.log("Producto "+req.params.id+" Borrado");
+        console.log(catalogo.length);
+        res.redirect("products")
     }
 }
 
