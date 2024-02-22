@@ -1,7 +1,7 @@
 [
  {
   "id": 1,
-  "avatar": "PraesentLectus.mpeg",
+  "avatar": "user-icon.jpg",
   "nombre": "Bonny",
   "apellido": "Fairbrass",
   "usuario": "bfairbrass0",
@@ -11,7 +11,7 @@
  },
  {
   "id": 2,
-  "avatar": "EuNibh.xls",
+  "avatar": "user-icon.jpg",
   "nombre": "Kerrill",
   "apellido": "Warr",
   "usuario": "kwarr1",
@@ -21,7 +21,7 @@
  },
  {
   "id": 3,
-  "avatar": "SollicitudinVitaeConsectetuer.xls",
+  "avatar": "user-icon.jpg",
   "nombre": "Mae",
   "apellido": "Korejs",
   "usuario": "mkorejs2",
@@ -31,7 +31,7 @@
  },
  {
   "id": 4,
-  "avatar": "Ut.xls",
+  "avatar": "user-icon.jpg",
   "nombre": "Hamilton",
   "apellido": "Charker",
   "usuario": "hcharker3",
@@ -41,7 +41,7 @@
  },
  {
   "id": 5,
-  "avatar": "Volutpat.mpeg",
+  "avatar": "user-icon.jpg",
   "nombre": "Meir",
   "apellido": "Feeny",
   "usuario": "mfeeny4",
@@ -51,7 +51,7 @@
  },
  {
   "id": 6,
-  "avatar": "Magnis.jpeg",
+  "avatar": "user-icon.jpg",
   "nombre": "Henka",
   "apellido": "Lidell",
   "usuario": "hlidell5",
@@ -61,7 +61,7 @@
  },
  {
   "id": 7,
-  "avatar": "NonVelitNec.xls",
+  "avatar": "user-icon.jpg",
   "nombre": "Ab",
   "apellido": "Cocks",
   "usuario": "acocks6",
@@ -71,7 +71,7 @@
  },
  {
   "id": 8,
-  "avatar": "NislDuis.tiff",
+  "avatar": "user-icon.jpg",
   "nombre": "Rachelle",
   "apellido": "Twydell",
   "usuario": "rtwydell7",
@@ -81,7 +81,7 @@
  },
  {
   "id": 9,
-  "avatar": "Lobortis.doc",
+  "avatar": "user-icon.jpg",
   "nombre": "Rosalia",
   "apellido": "Sperling",
   "usuario": "rsperling8",
@@ -100,102 +100,13 @@
   "telefono": "387-868-9961"
  },
  {
-  "id": 1708438878811,
+  "id": 1708604764651,
   "nombre": "FACUNDO",
   "apellido": "PERALTA",
   "usuario": "pera166",
   "email": "fperaltaperez@gmail.com",
-  "password": "123",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708439325638,
-  "avatar": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "123",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708439396247,
-  "avatar": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "123",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708439489737,
-  "avatar": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "12345667",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708439738691,
-  "avatar": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "123",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708439887676,
-  "avatar": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "123fdgd",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708439948258,
-  "image": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "sdsddsds",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708440031075,
-  "avatar": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "123",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708440105501,
-  "image": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "holacampeon",
-  "telefono": "03884657763"
- },
- {
-  "id": 1708440177125,
-  "image": "user-icon.png",
-  "nombre": "FACUNDO",
-  "apellido": "PERALTA",
-  "usuario": "pera166",
-  "email": "fperaltaperez@gmail.com",
-  "password": "sssssssssssssssssssssssss",
-  "telefono": "03884657763"
+  "password": "222222222222222",
+  "telefono": "03884657763",
+  "avatar": "img_1708604764622.jpg"
  }
 ]

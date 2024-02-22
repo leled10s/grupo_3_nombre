@@ -21,10 +21,13 @@ const userControllers = {
                 email: req.body.email,
                 password: req.body.password,
                 telefono: req.body.telefono,
-                image: req.file?.filename    || 'user-icon.png',
+                avatar: req.file ? req.file.filename : 'user-icon.jpg', 
 			
 		}
-        console.log(req.body);
+
+
+
+        console.log(newUser);
 		// Agregamos el nuevo producto al listado
 		users.push(newUser)
 		// Convertimos a json el objeto javascript

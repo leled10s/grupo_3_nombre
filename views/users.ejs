@@ -8,7 +8,7 @@
         <div class="users">
             <% users.forEach(user => { %>
                 <article class="listadoUsers">
-                    <img src="/data/USER-DATA.json" alt="imagen usuario">
+                    <img class="tamañoImagen" src="/images/avatars/<%= user.avatar %>" alt="imagen usuario">
                     <div class="detalle" >
                         <h3 class="">Nombre: <%= user.nombre %></h3>
                         <h3 class="">Apellido: <%= user.apellido %></h3>

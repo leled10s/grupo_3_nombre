@@ -9,3 +9,10 @@
     display: flex;
     align-items: center;
 }
+.tamañoImagen{
+    width: 10%;
+    height: 10%;
+    border-radius: 20%;
+    margin: 50px;
+    text-align: center;
+}
