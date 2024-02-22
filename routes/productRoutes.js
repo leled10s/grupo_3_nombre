@@ -3,7 +3,9 @@ const express = require("express")
 const productRouter = express.Router()
 
 
-productRouter.get("/",productController.products)
+productRouter.get("/",productController.index)
+
+productRouter.get("/products",productController.products)
 
 productRouter.get("/create",productController.create)
 productRouter.post("/create", productController.crearProducto)

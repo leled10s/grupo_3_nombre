@@ -21,11 +21,9 @@ app.use(methodOverride("_method"))
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
-app.use("/", mainRouter)
-app.use("/products", productRouter)
-app.use("/users", userRouter)
+app.use(mainRouter)
+app.use(productRouter)
+app.use(userRouter)
 
 
 app.listen(port,()=>console.log(`listening port ${port}`))
-
-module.exports = app

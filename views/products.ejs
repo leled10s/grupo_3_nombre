@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head', { title: 'productos' }) %>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet" />
+        <link rel="stylesheet" href="/css/padre.css">
+        <link rel="stylesheet" href="/css/index.css">
+        
+        <link rel="icon" href="images\icono-guitarra.png">
+
+        <link rel="stylesheet" href="css/products.css">
+
+        <title>Productos</title>
+    </head>
 <body>
     <%- include('./partials/header') %>
 
@@ -16,17 +33,34 @@
             <button>accesorios</button>
         </div>
         <div class="products">
-            <% catalogo.forEach(product => { %>
-                <article class="producto">
-                    <img src="/images/lespaul.jpg" alt="">
-                    <div class="detalle" >
-                        <h3 class="nombre-producto"><%= product.name %></h3>
-                        <h3 class="marca"><%= product.brand %></h3>
-                        <h3 class="precio"><%= product.price %></h3>
-                        <h3 class="descuento"><%= product.discount %></h3>
-                    </div>
-                </article>
-            <% }) %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>img</th>
+                        <th>modelo - marca</th>
+                        <th>categoria</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% catalogo.forEach(product => { %>
+                        <tr>
+                            <td><%- product.id %></td>
+                            <td>img</td>
+                            <td><%- product.brand+" - "+product.name %></td>
+                            <td>categoria</td>
+                            <td class="btn-col">
+                                <button class="edit-btn"><a href=<%- "/edit/"+product.id %>>EDITAR</a></button>
+
+                                <form  method="post" action=<%- "/"+product.id+"?_method=DELETE" %> > 
+                                    <input class="delete-btn" type="submit" value="BORRAR">
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
         </div>
 
     </main>
