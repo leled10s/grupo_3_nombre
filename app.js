@@ -2,6 +2,7 @@ const express = require("express")
 const mainRouter = require("./routes/mainRoutes")
 const productRouter = require("./routes/productRoutes")
 const userRouter = require("./routes/userRoutes")
+const session = require("express-session")
 
 const methodOverride = require("method-override")
 
@@ -17,6 +18,12 @@ app.use(express.static(publicpath))
 app.set('view engine', "ejs")
 
 app.use(methodOverride("_method"))
+
+app.use(session({
+    secret:"WubbaLubbaDubDub",
+    resave:false,
+    saveUninitialized:false,
+}))
 
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())

@@ -18,16 +18,20 @@ const storage = multer.diskStorage({
 
   const upload = multer({ storage })
 
-userRouter.get("/", userController.users)
+userRouter.get("/users", userController.users)
 
-userRouter.get("/create", userController.formCrearUsuario)
-userRouter.post("/create", upload.single('avatar'),  userController.crearUsuario)
+userRouter.get("/profile",userController.profile)
 
+userRouter.get("/users/create", userController.formCrearUsuario)
+userRouter.post("/users/create", upload.single('avatar'),  userController.crearUsuario)
 
-userRouter.put("/:id", userController.EditUser)
-userRouter.delete("/:id", userController.deleteUser)
+userRouter.post("/users/login", userController.login)
 
-userRouter.get("/edit/:id", userController.formEditUser)
+userRouter.put("/users/:id", userController.EditUser)
+
+userRouter.delete("/users/:id", userController.deleteUser)
+
+userRouter.get("/users/edit/:id", userController.formEditUser)
 
 
 

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head', { title: 'Ingresar' }) %>
+    <head>
+        <link rel="stylesheet" href="css/forms.css">
+    </head>
+    <body>
+        <%- include('./partials/header') %>
+        <main class="form__container">
+
+                <div class="avatar__container">
+                    <div class="avatar">
+                        <img src="images/avatars/<%= loggedUser.avatar %>" alt="user_avatar">
+                        
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" disabled="true" value=<%= loggedUser.usuario %>  name="usuario" >
+                </div>
+                <div class="form__field">
+                    <label for="email">Email:</label>
+                    <input type="email" disabled="true" value=<%= loggedUser.email %> name="email">
+                </div>
+                
+
+        </main>
+        <%- include('./partials/footer') %>
+</body>
+</html>
