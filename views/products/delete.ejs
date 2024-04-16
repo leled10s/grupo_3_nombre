@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', { title: 'Crear Producto' }) %>
+    <head>
+        <link rel="stylesheet" href="/css/forms.css">
+        <link rel="stylesheet" href="/css/create-form.css">
+    </head>
+<body>
+    <%- include('../partials/header') %>
+
+    <main>
+        <form action="/products/delete/<%= product.id %>?_method=DELETE" method="post">
+            <button><a href="/products/list">No</a></button>
+            <input type="submit" value="Si">
+        </form>
+    </main>
+
+    <%- include('../partials/footer') %>
+</body>
+</html>

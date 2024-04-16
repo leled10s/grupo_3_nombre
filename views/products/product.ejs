@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head', { title: 'Productos' }) %>
+    <%- include('../partials/head', { title: 'Productos' }) %>
     <body>
-        <%- include('./partials/header') %>
+        <%- include('../partials/header') %>
     
         <main>
             <section class="element">
                 <div class="producto">
-                    <img class="image" src="/images/lespaul.jpg" alt="">
+                    <img class="image" src="../images/lespaul.jpg" alt="">
                     <div class="prod-head">
                         <div class="nombre-prod"><%= producto.name %></div>
                         <div class="nombre-prod"><%= producto.brand %></div>
@@ -39,6 +39,6 @@
             </section>
         </main>
     
-        <%- include('./partials/footer') %>
+        <%- include('../partials/footer') %>
     </body>
 </html>

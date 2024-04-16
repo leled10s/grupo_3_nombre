@@ -1,152 +1,162 @@
 [
-    {
-        "id": 1,
-        "avatar": "user-icon.jpg",
-        "nombre": "Bonny",
-        "apellido": "Fairbrass",
-        "usuario": "bfairbrass0",
-        "email": "bfairbrass0@hc360.com",
-        "password": "kE4.JYKh~<@)oE",
-        "telefono": "348-762-4777"
-    },
-    {
-        "id": 2,
-        "avatar": "user-icon.jpg",
-        "nombre": "Kerrill",
-        "apellido": "Warr",
-        "usuario": "kwarr1",
-        "email": "kwarr1@virginia.edu",
-        "password": "bM5|5eMJ2",
-        "telefono": "296-313-8001"
-    },
-    {
-        "id": 3,
-        "avatar": "user-icon.jpg",
-        "nombre": "Mae",
-        "apellido": "Korejs",
-        "usuario": "mkorejs2",
-        "email": "mkorejs2@zdnet.com",
-        "password": "mF0+ECK>eNm@",
-        "telefono": "734-983-5732"
-    },
-    {
-        "id": 4,
-        "avatar": "user-icon.jpg",
-        "nombre": "Hamilton",
-        "apellido": "Charker",
-        "usuario": "hcharker3",
-        "email": "hcharker3@msu.edu",
-        "password": "mW9?{'c(j~",
-        "telefono": "830-622-0076"
-    },
-    {
-        "id": 5,
-        "avatar": "user-icon.jpg",
-        "nombre": "Meir",
-        "apellido": "Feeny",
-        "usuario": "mfeeny4",
-        "email": "mfeeny4@fema.gov",
-        "password": "wP2>hH4o!yx",
-        "telefono": "215-388-5797"
-    },
-    {
-        "id": 6,
-        "avatar": "user-icon.jpg",
-        "nombre": "Henka",
-        "apellido": "Lidell",
-        "usuario": "hlidell5",
-        "email": "hlidell5@sun.com",
-        "password": "mH7`D(A$XlZ",
-        "telefono": "345-820-8992"
-    },
-    {
-        "id": 7,
-        "avatar": "user-icon.jpg",
-        "nombre": "Ab",
-        "apellido": "Cocks",
-        "usuario": "acocks6",
-        "email": "acocks6@cloudflare.com",
-        "password": "tM7+wGMkdy~+M`4r",
-        "telefono": "578-864-3766"
-    },
-    {
-        "id": 8,
-        "avatar": "user-icon.jpg",
-        "nombre": "Rachelle",
-        "apellido": "Twydell",
-        "usuario": "rtwydell7",
-        "email": "rtwydell7@mediafire.com",
-        "password": "dY3(G7+Jw%vFK61",
-        "telefono": "114-987-7008"
-    },
-    {
-        "id": 9,
-        "avatar": "user-icon.jpg",
-        "nombre": "Rosalia",
-        "apellido": "Sperling",
-        "usuario": "rsperling8",
-        "email": "rsperling8@slideshare.net",
-        "password": "sV6'48,BM|j!Co!",
-        "telefono": "347-534-2835"
-    },
-    {
-        "id": 10,
-        "avatar": "Faucibus.mp3",
-        "nombre": "Nicko",
-        "apellido": "Pinchon",
-        "usuario": "npinchon9",
-        "email": "npinchon9@zimbio.com",
-        "password": "fJ0\\Wsl8kg\\*KDh",
-        "telefono": "387-868-9961"
-    },
-    {
-        "id": 11,
-        "nombre": "FACUNDO",
-        "apellido": "PERALTA",
-        "usuario": "pera166",
-        "email": "fperaltaperez@gmail.com",
-        "password": "222222222222222",
-        "telefono": "03884657763",
-        "avatar": "img_1708604764622.jpg"
-    },
-    {
-        "id": 12,
-        "nombre": "aa",
-        "apellido": "aa",
-        "usuario": "root",
-        "email": "root@a",
-        "password": "$2b$12$nTTc2BJYKFE4/Q3DAUjC9u2XZFwqNkvJLDK7diHvshwjjBYGldmTO",
-        "telefono": "232435436",
-        "avatar": "img_1710117488202.png"
-    },
-    {
-        "id": 14,
-        "avatar": "picpath",
-        "nombre": "rick",
-        "apellido": "sanchez",
-        "usuario": "pickleRick",
-        "email": "rick@wuba",
-        "password": 3434,
-        "telefono": 2342342
-    },
-    {
-        "id": 15,
-        "avatar": "picpath",
-        "nombre": "rick",
-        "apellido": "sanchez",
-        "usuario": "pickleRick",
-        "email": "rick@wuba",
-        "password": 3434,
-        "telefono": 2342342
-    },
-    {
-        "id": 16,
-        "avatar": "picpath",
-        "nombre": "rick",
-        "apellido": "sanchez",
-        "usuario": "pickleRick",
-        "email": "rick@wuba",
-        "password": 3434,
-        "telefono": 2342342
-    }
+ {
+  "id": 1,
+  "avatar": "user-icon.jpg",
+  "nombre": "Bonny",
+  "apellido": "Fairbrass",
+  "usuario": "bfairbrass0",
+  "email": "bfairbrass0@hc360.com",
+  "password": "kE4.JYKh~<@)oE",
+  "telefono": "348-762-4777"
+ },
+ {
+  "id": 2,
+  "avatar": "user-icon.jpg",
+  "nombre": "Kerrill",
+  "apellido": "Warr",
+  "usuario": "kwarr1",
+  "email": "kwarr1@virginia.edu",
+  "password": "bM5|5eMJ2",
+  "telefono": "296-313-8001"
+ },
+ {
+  "id": 3,
+  "avatar": "user-icon.jpg",
+  "nombre": "Mae",
+  "apellido": "Korejs",
+  "usuario": "mkorejs2",
+  "email": "mkorejs2@zdnet.com",
+  "password": "mF0+ECK>eNm@",
+  "telefono": "734-983-5732"
+ },
+ {
+  "id": 4,
+  "avatar": "user-icon.jpg",
+  "nombre": "Hamilton",
+  "apellido": "Charker",
+  "usuario": "hcharker3",
+  "email": "hcharker3@msu.edu",
+  "password": "mW9?{'c(j~",
+  "telefono": "830-622-0076"
+ },
+ {
+  "id": 5,
+  "avatar": "user-icon.jpg",
+  "nombre": "Meir",
+  "apellido": "Feeny",
+  "usuario": "mfeeny4",
+  "email": "mfeeny4@fema.gov",
+  "password": "wP2>hH4o!yx",
+  "telefono": "215-388-5797"
+ },
+ {
+  "id": 6,
+  "avatar": "user-icon.jpg",
+  "nombre": "Henka",
+  "apellido": "Lidell",
+  "usuario": "hlidell5",
+  "email": "hlidell5@sun.com",
+  "password": "mH7`D(A$XlZ",
+  "telefono": "345-820-8992"
+ },
+ {
+  "id": 7,
+  "avatar": "user-icon.jpg",
+  "nombre": "Ab",
+  "apellido": "Cocks",
+  "usuario": "acocks6",
+  "email": "acocks6@cloudflare.com",
+  "password": "tM7+wGMkdy~+M`4r",
+  "telefono": "578-864-3766"
+ },
+ {
+  "id": 8,
+  "avatar": "user-icon.jpg",
+  "nombre": "Rachelle",
+  "apellido": "Twydell",
+  "usuario": "rtwydell7",
+  "email": "rtwydell7@mediafire.com",
+  "password": "dY3(G7+Jw%vFK61",
+  "telefono": "114-987-7008"
+ },
+ {
+  "id": 9,
+  "avatar": "user-icon.jpg",
+  "nombre": "Rosalia",
+  "apellido": "Sperling",
+  "usuario": "rsperling8",
+  "email": "rsperling8@slideshare.net",
+  "password": "sV6'48,BM|j!Co!",
+  "telefono": "347-534-2835"
+ },
+ {
+  "id": 10,
+  "avatar": "Faucibus.mp3",
+  "nombre": "Nicko",
+  "apellido": "Pinchon",
+  "usuario": "npinchon9",
+  "email": "npinchon9@zimbio.com",
+  "password": "fJ0\\Wsl8kg\\*KDh",
+  "telefono": "387-868-9961"
+ },
+ {
+  "id": 11,
+  "nombre": "FACUNDO",
+  "apellido": "PERALTA",
+  "usuario": "pera166",
+  "email": "fperaltaperez@gmail.com",
+  "password": "222222222222222",
+  "telefono": "03884657763",
+  "avatar": "img_1708604764622.jpg"
+ },
+ {
+  "id": 12,
+  "nombre": "aa",
+  "apellido": "aa",
+  "usuario": "root",
+  "email": "root@a",
+  "password": "$2b$12$nTTc2BJYKFE4/Q3DAUjC9u2XZFwqNkvJLDK7diHvshwjjBYGldmTO",
+  "telefono": "232435436",
+  "avatar": "img_1710117488202.png"
+ },
+ {
+  "id": 14,
+  "avatar": "picpath",
+  "nombre": "rick",
+  "apellido": "sanchez",
+  "usuario": "pickleRick",
+  "email": "rick@wuba",
+  "password": 3434,
+  "telefono": 2342342
+ },
+ {
+  "id": 15,
+  "avatar": "picpath",
+  "nombre": "rick",
+  "apellido": "sanchez",
+  "usuario": "pickleRick",
+  "email": "rick@wuba",
+  "password": 3434,
+  "telefono": 2342342
+ },
+ {
+  "id": 16,
+  "avatar": "picpath",
+  "nombre": "rick",
+  "apellido": "sanchez",
+  "usuario": "pickleRick",
+  "email": "rick@wuba",
+  "password": 3434,
+  "telefono": 2342342
+ },
+ {
+  "id": 17,
+  "password": "$2b$12$NfBgS7bawFqyZ9e5bFsgne9ruxHh/VPSGsqSwWZUKpXDPmZmEWi46",
+  "avatar":"user-icon.jpg",
+  "nombre": "imGtoot",
+  "apellido": "imGroot",
+  "usuario": "imGroot",
+  "email": "im@Groot",
+  "telefono": "1"
+ }
 ]

@@ -7,16 +7,14 @@ const catalogo = JSON.parse(data)
 
 const mainController = {
     index:(req, res)=>{
-        res.render("index",{catalogo:catalogo})
+        try {
+            res.render("index",{catalogo: catalogo})
+        } catch (error) {
+            console.log(error);
+        }
     },
-    carrito:(req, res)=>{
-        res.render("carrito")
-    },
-    register:(req, res)=>{
-        res.render("registro")
-    },
-    login:(req, res)=>{
-        res.render("login")
+    cart:(req, res)=>{
+        res.render("cart")
     }
 }
 

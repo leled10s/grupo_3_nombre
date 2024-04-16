@@ -7,13 +7,13 @@
         <div class="users">
             <% users.forEach(user => { %>
                 <article class="listadoUsers">
-                    <img class="tamañoImagen" src="/images/avatars/" alt="imagen usuario">
+                    <img class="avatar" src="/images/avatars/<%= user.avatar %>" alt="imagen usuario">
                     <div class="detalle" >
                         <h3 class="">Nombre: <%= user.nombre %></h3>
                         <h3 class="">Apellido: <%= user.apellido %></h3>
-                        <h3 class="">Edad: <%= user.usuario %></h3>
-                        <h3 class="">Genero: <%= user.email %></h3>
-                        <h3 class="">E-mail: <%= user.password %></h3>
+                        <h3 class="">Edad: <%= user.edad %></h3>
+                        <h3 class="">Genero: <%= user.genero %></h3>
+                        <h3 class="">E-mail: <%= user.email %></h3>
                         <h3 class="">Telefono: <%= user.telefono %></h3>
                         
                     </div>

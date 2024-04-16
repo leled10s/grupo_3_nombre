@@ -1,14 +1,14 @@
 const mainController = require("../controller/mainController")
 const express = require("express")
 const mainRouter = express.Router()
+const guestMiddleware = require("../middleware/guestMiddleware")
+const {index, cart, singup, login} = require("../controller/mainController")
+
+mainRouter.get("/", index)
 
 
-mainRouter.get("/", mainController.index)
+mainRouter.get("/carrito", cart)
 
-
-mainRouter.get("/carrito", mainController.carrito)
-mainRouter.get("/login", mainController.login)
-mainRouter.get("/register", mainController.register)
 
 
 

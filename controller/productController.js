@@ -1,43 +1,49 @@
-const fs = require('fs')
-const path = require("path")
-const data = fs.readFileSync(path.join(__dirname,'../data/MOCK_DATA.json'), "utf-8")
-let catalogo = JSON.parse(data)
+const Product = require('../models/Product')
 
 const productControllers = {
-    index:(req, res)=>{
-        res.render("index",{catalogo:catalogo})
-    },
-    crearProducto:(req, res)=>{
-        form_body = req.body
-        console.log(form_body);
-        res.redirect('/products/create')
-    },
-    create:(req, res)=>{
-        res.render("crear")
-    },
-    products:(req, res)=>{
-        res.render("products", {catalogo:catalogo})
-    },
-    detalleProducto:(req, res)=>{
-        const producto = catalogo.find((p)=>p.id == req.params.id)
-        producto?res.render("detalle-producto",{producto:producto}):res.send("el id no es valido")
-    },
-    editForm:(req, res)=>{
-        const producto = catalogo.find((p)=>p.id == req.params.id)
-        res.render("edit-product",{producto:producto})
-    },
-    editPut:(req, res)=>{
-        catalogo[catalogo.findIndex(e=>e.id==req.body.id)] = req.body
 
-        res.redirect("/products")
+    createView:(req, res)=>{
+        res.render("products/create")
     },
-    delete:(req, res)=>{
-        console.log(catalogo.length);
-        catalogo = catalogo.filter((p)=>p.id != req.params.id)
-        console.log("Producto "+req.params.id+" Borrado");
-        console.log(catalogo.length);
-        res.redirect("products")
+
+    create:(req, res)=>{
+    
+    },
+
+    productsView:(req, res)=>{
+        const products = Product.findAll()
+        res.render("products/products", {catalogo:products})
+    },
+
+    productView:(req, res)=>{
+    console.log(typeof req.params.id);
+    const producto = Product.findByPk(Number(req.params.id))
+    producto?res.render("products/product",{producto:producto}):res.send("el id no es valido")
+    },
+
+    editView:(req, res)=>{
+        const product = Product.findByPk(Number(req.params.id))
+        console.log(req.params.id)
+        console.log(product)
+        //console.log(Product.findAll());
+        res.render("products/edit",{producto:product})
+    },
+
+    edit:(req, res)=>{
+        Product.update(req.body.id, req,body)
+        res.redirect("/products/list")
+    },
+
+    deleteView:(req, res)=>{
+        const product = Product.findByPk(Number(req.params.id))
+        res.render("products/delete", {product:product})
+    },
+
+    del:(req, res)=>{
+        Product.delete(req.params.id)
+        res.redirect("/products/list")
     }
+
 }
 
 module.exports = productControllers

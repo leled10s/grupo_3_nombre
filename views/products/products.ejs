@@ -19,7 +19,7 @@
         <title>Productos</title>
     </head>
 <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
 
     <main>
         <div class="search_bar">
@@ -51,11 +51,8 @@
                             <td><%- product.brand+" - "+product.name %></td>
                             <td>categoria</td>
                             <td class="btn-col">
-                                <button class="edit-btn"><a href=<%- "/edit/"+product.id %>>EDITAR</a></button>
-
-                                <form  method="post" action=<%- "/"+product.id+"?_method=DELETE" %> > 
-                                    <input class="delete-btn" type="submit" value="BORRAR">
-                                </form>
+                                <button class="edit-btn"><a href= "/products/edit/<%=product.id %>">EDITAR</a></button>
+                                <button class="edit-btn"><a href= "/products/delete/<%=product.id %>">BORRAR</a></button>
                             </td>
                         </tr>
                     <% }) %>
@@ -65,6 +62,6 @@
 
     </main>
 
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
 </body>
 </html>

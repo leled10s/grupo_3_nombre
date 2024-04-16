@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head', { title: 'Crear Producto' }) %>
+    <%- include('../partials/head', { title: 'Crear Producto' }) %>
     <head>
         <link rel="stylesheet" href="css/forms.css">
         <link rel="stylesheet" href="/css/create-form.css">
     </head>
 <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
 
     <main>
         <form action="/:id?_method=PUT" method="POST">
             <label for="id">ID: </label>
-            <input placeholder="" name="id" type="number" value=<%- producto.id %>> <br/>
+            <input placeholder="" name="id" type="number" value="<%= producto.id %>"> <br/>
             <label for="name">Modelo: </label>
-            <input placeholder="" name="name" type="text" value=<%- producto.name %> ><br/>
+            <input placeholder="" name="name" type="text" value="<%= producto.name %>" ><br/>
             <label for="brand">Marca: </label>
-            <input placeholder="" name="brand" type="text" value=<%- producto.brand %> ><br/>
+            <input placeholder="" name="brand" type="text" value="<%= producto.brand %>" ><br/>
             <label for="year">Año: </label>
-            <input placeholder="" name="year" type="number" value=<%- producto.year %> ><br/>
+            <input placeholder="" name="year" type="number" value="<%= producto.year %>" ><br/>
             <label for="body_type">Tipo de cuerpo: </label>
-            <input placeholder="" name="body_type" type="text" value=<%- producto.body_type %> ><br/>
+            <input placeholder="" name="body_type" type="text" value=<%= producto.body_type %> ><br/>
             <label for="neck_type">Tipo de mastil: </label>
             <input placeholder="" name="neck_type" type="text" value=<%- producto.neck_type %> ><br/>
             <label for="pickup_configuration">pastillas: </label>
@@ -43,6 +43,6 @@
         </form>
     </main>
 
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
 </body>
 </html>

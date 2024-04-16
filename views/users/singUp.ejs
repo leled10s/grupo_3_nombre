@@ -15,11 +15,20 @@
                 <div class="avatar__container">
                     <label for="avatar">Foto de perfil:</label>
                     <div class="avatar">
-                        <img src="images/avatars/user-icon.jpg" alt="user_avatar">
+                        <img id="avatar_img" src="/images/avatars/user-icon.jpg" alt="user_avatar">
                     </div>
                     <div id="file">
                         <p id="btn__file__text">Add file</p>
-                        <input type="file" name="avatar" id="avatar" accept=".jpg, .png">
+                        <input type="file" name="avatar" id="avatar" accept=".jpg, .png" onchange="loadFile(event)">
+                        <script>
+                            var loadFile = function(event) {
+                                var output = document.getElementById('avatar_img');
+                                output.src = URL.createObjectURL(event.target.files[0]);
+                                output.onload = function() {
+                                    URL.revokeObjectURL(output.src); // Free memory
+                                };
+                            };
+                        </script>
                     </div>
                 </div>
 
