@@ -1,14 +1,10 @@
-const fs = require('fs')
-const path = require("path")
-const data = fs.readFileSync(path.join(__dirname,'../data/MOCK_DATA.json'), "utf-8")
-const catalogo = JSON.parse(data)
-
-
+const db = require("../database/models").sequelize.models;
 
 const mainController = {
-    index:(req, res)=>{
+    index: async (req, res)=>{
         try {
-            res.render("index",{catalogo: catalogo})
+            products = await db.Product.findAll()
+            res.render("index",{catalogo: products})
         } catch (error) {
             console.log(error);
         }

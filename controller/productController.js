@@ -1,4 +1,5 @@
-const Product = require('../models/Product')
+const db = require("../database/models").sequelize.models;
+const Product = db.Product
 
 const productControllers = {
 
@@ -10,37 +11,34 @@ const productControllers = {
     
     },
 
-    productsView:(req, res)=>{
-        const products = Product.findAll()
+    productsView: async (req, res)=>{
+        const products = await Product.findAll()
+
         res.render("products/products", {catalogo:products})
     },
 
-    productView:(req, res)=>{
-    console.log(typeof req.params.id);
-    const producto = Product.findByPk(Number(req.params.id))
+    productView: async (req, res)=>{
+    const producto = await Product.findByPk(Number(req.params.id))
     producto?res.render("products/product",{producto:producto}):res.send("el id no es valido")
     },
 
-    editView:(req, res)=>{
-        const product = Product.findByPk(Number(req.params.id))
-        console.log(req.params.id)
-        console.log(product)
-        //console.log(Product.findAll());
+    editView: async (req, res)=>{
+        const product = await Product.findByPk(Number(req.params.id))
         res.render("products/edit",{producto:product})
     },
 
-    edit:(req, res)=>{
-        Product.update(req.body.id, req,body)
+    edit: async (req, res)=>{
+        await Product.update(req.body.id, req,body)
         res.redirect("/products/list")
     },
 
-    deleteView:(req, res)=>{
-        const product = Product.findByPk(Number(req.params.id))
+    deleteView: async (req, res)=>{
+        const product = await Product.findByPk(Number(req.params.id))
         res.render("products/delete", {product:product})
     },
 
-    del:(req, res)=>{
-        Product.delete(req.params.id)
+    del: async (req, res)=>{
+        await Product.delete(req.params.id)
         res.redirect("/products/list")
     }
 

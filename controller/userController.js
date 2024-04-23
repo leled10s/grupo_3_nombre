@@ -1,7 +1,9 @@
+const db = require("../database/models").sequelize.models;
+
 const bcrypt = require('bcrypt')
 const sal = 12
 
-const User = require('../models/User')
+const User = db.User
 
 const userControllers = {
     users: (req, res) => {
